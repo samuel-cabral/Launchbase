@@ -61,26 +61,23 @@ enviaMensagem(media2, "TurmaB");
 
 // marcar aluno como reprovado se nota for menor que 5
 // enviar como mensagem
-
 function marcarComoReprovado(aluno) {
   aluno.reprovado = false;
   if (aluno.nota < 5) {
-    aluno.reprovado = true;
+    aluno.reprovado = true;    
   }
 }
 
-marcarComoReprovado(alunosDaTurmaA)
-
-function enviarMensagemReprovado(aluno) {
-  if (aluno.reprovado) console.log(`O aluno ${aluno.nome} está reprovado!`)
+function enviarMensagemReprovado (aluno) {
+  console.log(`O ${aluno.nome} está reprovado`)
 }
 
-function alunoEstahReprovado(alunos) {
-  for (let aluno of alunos) {
-    marcarComoReprovado(aluno);
-    enviarMensagemReprovado(aluno);
+function AlunoEstaReprovado(alunos) {
+  for (aluno of alunos) {
+    marcarComoReprovado(aluno)
+    enviarMensagemReprovado(aluno)
   }
 }
 
-alunoEstahReprovado(alunosDaTurmaA)
-alunoEstahReprovado(alunosDaTurmaB)
+AlunoEstaReprovado(alunosDaTurmaA)
+AlunoEstaReprovado(alunosDaTurmaB)
