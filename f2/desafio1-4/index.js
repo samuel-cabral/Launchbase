@@ -60,7 +60,7 @@ function getTransactionsCount() {
     }
   }
 
-  // console.log(numberOfTransactions)
+  // console.log(numberOfTransactions) -> só para mostrar no console
   return numberOfTransactions
 }
 
