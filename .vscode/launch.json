@@ -12,7 +12,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/fase-02/desafio1-3/receitas_e_despesas.js"
+      "program": "${workspaceFolder}/fase-02/desafio1-4/index.js"
     }
   ]
 }
