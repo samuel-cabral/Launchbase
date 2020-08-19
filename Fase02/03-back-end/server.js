@@ -7,7 +7,7 @@ const server = express();
 // EXPRESS USE STATIC FILES OF THE public FOLDER
 server.use(express.static('public'));
 
-server.set('view engine', 'html');
+server.set('view engine', 'njk');
 
 // SET NUNJUCKS TO CONFIGURE views FOLDER
 nunjucks.configure('views', {
@@ -16,7 +16,7 @@ nunjucks.configure('views', {
 
 // ROUTES
 server.get('/', function (req, res) {
-  return res.render('index');
+  return res.render('about');
 });
 
 server.get('/portfolio', function (req, res) {
