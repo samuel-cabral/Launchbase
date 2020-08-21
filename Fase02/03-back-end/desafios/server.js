@@ -16,14 +16,21 @@ nunjucks.configure('views', {
 });
 
 // routes
+// initial page
 server.get('/', function (req, res) {
-  return res.render('about')
+  return res.render('courses')
 });
 
+// about page
+server.get('/about', function (req, res) {
+  return res.render('about');
+});
 
-server.get('/courses', function (req, res) {
-  return res.send('courses')
-})
+// if not found
+server.use( function ( req, res) {
+  res.status(404).render('not-found');
+});
+
 
 server.listen(5000, function() {
   console.log('🚀 server is running');
