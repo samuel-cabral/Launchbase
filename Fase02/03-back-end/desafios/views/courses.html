@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocketseat</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="links">
+        <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+        <a href="mailto:oi@rocketseat.com.br">Email</a>
+        <a href="tel:+4733378901">Telefone</a>
+        <a href="index.html">Sobre</a>
+        <a href="contents.html">Conteúdos</a>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <h1>Conteúdos</h1>
+    </div>
+
+    <section class="cards">
+      <div class="card" id="starter">
+        <div class="card__image-container">
+          <img src="starter.svg" alt="Starter" />
+        </div>
+        <div class="card__content">
+          <p>5 módulos</p>
+        </div>
+        <div class="card__info">
+          <p class="card__price">Gratuito</p>
+        </div>
+      </div>
+
+      <div class="card" id="launchbase">
+        <div class="card__image-container">
+          <img src="launchbase.svg" alt="Launchbase" />
+        </div>
+        <div class="card__content">
+          <p>16 módulos</p>
+        </div>
+        <div class="card__info">
+          <p class="card__price">Pago</p>
+        </div>
+      </div>
+
+      <div class="card" id="gostack">
+        <div class="card__image-container">
+          <img src="gostack.svg" alt="Gostack" />
+        </div>
+        <div class="card__content">
+          <p>16 módulos</p>
+        </div>
+        <div class="card__info">
+          <p class="card__price">Pago</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <nav class="navbar">
+          <a class="maximize-modal">
+            <span class="material-icons">
+              aspect_ratio
+            </span>
+          </a>
+          <a class="close-modal">
+            <i class="material-icons">close</i>
+          </a>
+        </nav>
+
+        <div class="modal-content">
+          <iframe class="responsive-iframe" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
