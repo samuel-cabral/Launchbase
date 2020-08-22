@@ -1,79 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocketseat</title>
+{% extends "layout.html" %}
 
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+{% block title %}
+  <title>Rocketseat | Sobre</title>
+{% endblock title %}
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
-      rel="stylesheet"
+
+{% block content %}
+  <div id="wrapper">
+    <h1>Sobre</h1>  
+    <img
+      src="https://media-exp1.licdn.com/dms/image/C510BAQFHYedTI-oyWA/company-logo_200_200/0?e=2159024400&v=beta&t=yvPIbO_CuJzE-rPppYVY4VYuxkisOzn0d_Fwk1GpA7c"
+      alt="Rocketseat"
     />
-  </head>
 
-  <body>
-    <header>
-      <div class="links">
-        <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
-        <a href="mailto:oi@rocketseat.com.br">Email</a>
-        <a href="tel:+4733378901">Telefone</a>
-        <a href="/about">Sobre</a>
-        <a href="/">Cursos</a>
-      </div>
-    </header>
+    <h1>
+      <a target="_blank" href="https://rocketseat.com.br">Rocketseat</a>
+    </h1>
+    <h2>
+      As melhores tecnologias em programação, direto ao ponto e do jeito
+      certo.
+    </h2>
+    <p>
+      No meio de tanta informação e da quantidade de ferramentas que surgem
+      todos os dias, você precisa de alguém que te leve na direção certa.
+    </p>
+  </div>
 
-    <div id="wrapper">
-      <h1>Sobre</h1>  
+  <div class="tech">
+    <h1>Tecnologias Utilizadas</h1>
+    <div id="tech-images">
       <img
-        src="https://media-exp1.licdn.com/dms/image/C510BAQFHYedTI-oyWA/company-logo_200_200/0?e=2159024400&v=beta&t=yvPIbO_CuJzE-rPppYVY4VYuxkisOzn0d_Fwk1GpA7c"
-        alt="Rocketseat"
+        src="https://icons-for-free.com/iconfiles/png/512/install+javascript+js+node+npm+tools+icon-1320165731324625592.png"
+        alt="Node JS"
       />
 
-      <h1>
-        <a target="_blank" href="https://rocketseat.com.br">Rocketseat</a>
-      </h1>
-      <h2>
-        As melhores tecnologias em programação, direto ao ponto e do jeito
-        certo.
-      </h2>
-      <p>
-        No meio de tanta informação e da quantidade de ferramentas que surgem
-        todos os dias, você precisa de alguém que te leve na direção certa.
-      </p>
+      <img
+        src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png"
+        alt="React JS"
+      />
     </div>
 
-    <div class="tech">
-      <h1>Tecnologias Utilizadas</h1>
-      <div id="tech-images">
-        <img
-          src="https://icons-for-free.com/iconfiles/png/512/install+javascript+js+node+npm+tools+icon-1320165731324625592.png"
-          alt="Node JS"
-        />
-
-        <img
-          src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png"
-          alt="React JS"
-        />
-      </div>
-
-      <div id="tech-list">
-        <ul>
-          <li>NodeJS</li>
-          <li>ReactJS</li>
-          <li>React Native</li>
-        </ul>
-      </div>
+    <div id="tech-list">
+      <ul>
+        <li>NodeJS</li>
+        <li>ReactJS</li>
+        <li>React Native</li>
+      </ul>
     </div>
+  </div>
+{% endblock content %}
 
-    <div id="links-footer" class="links">
-      <a href="https://github.com/Rocketseat" target="_blank">Github</a>
-      <a href="http://instagram.com/rocketseat_oficial" target="_blank"
-        >Instagram</a
-      >
-      <a href="http://fb.com/rocketseat" target="_blank">Facebook</a>
-    </div>
-  </body>
-</html>
+{% block footer %}
+  <div id="links-footer" class="links">
+    <a href="https://github.com/Rocketseat" target="_blank">Github</a>
+    <a href="http://instagram.com/rocketseat_oficial" target="_blank"
+      >Instagram</a
+    >
+    <a href="http://fb.com/rocketseat" target="_blank">Facebook</a>
+  </div>
+{% endblock footer %}

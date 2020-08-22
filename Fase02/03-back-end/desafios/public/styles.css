@@ -1,22 +1,26 @@
 :root {
   --color-green: #50fa7b;
   --color-rocket: #7159c1;
-  --background-primary: #282a36;
-  --background-second: #44475a;
+  --background-primary: #111;
+  --background-secondary: #222;
+  --background-modal: #rgba(0, 0, 0, 0.7);
 }
 
 /* === GLOBAL === */
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border: 0 0 0 0;
   box-sizing: border-box;
 }
 
 body {
   color: #fff;
-  background-color: var(--background-second);
+  background-color: var(--background-primary);
   font-family: "Roboto", sans-serif;
+  padding-bottom: auto;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* === PARTIALS === */
@@ -24,12 +28,13 @@ header {
   padding: 0;
   align-items: center;
   text-align: center;
-  background: var(--background-primary);
+  background: var(--background-secondary);
 }
 
 .links {
   text-align: center;
   padding: 34px;
+  transition: color 0.2s;
 }
 
 .links a {
@@ -68,6 +73,7 @@ header {
 #wrapper h1 a {
   color: white;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 #wrapper h1 a:hover {
@@ -96,7 +102,7 @@ header {
 
 .tech,
 .tech h1 {
-  background-color: #282a36;
+  background-color: var(--background-secondary);
   padding: 32px;
   font-size: 42px;
   font-weight: bold;
@@ -124,7 +130,7 @@ header {
 
 #links-footer {
   padding: 30px 0;
-  background-color: #44475a;
+  background-color: var(--background-primary);
 }
 
 #links-footer a {
@@ -132,9 +138,10 @@ header {
   text-decoration: none;
 }
 
-/* === Cards === */
+/* === Cards === */ 
 .cards {
-  max-width: 800px;
+  width: 90%;
+  height: 70%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -143,16 +150,27 @@ header {
 }
 
 .card {
-  background-color: var(--background-primary);
-  padding: 64px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-secondary);
+  padding: 64px 50px;
   border-radius: 8px;
   text-align: center;
   cursor: pointer;
+  transition: border;
+}
+
+.card:hover {
+  border: 2px solid var(--color-green);
 }
 
 .card__image-container img {
   width: auto;
-  height: 100px;
+  height: 160px;
 }
 
 .card__content,
@@ -166,17 +184,23 @@ header {
 }
 
 .card__price {
-  background-color: var(--background-second);
+  width: auto;
+  background-color: var(--background-primary);
   filter: brightness(90%);
-  padding: 5px 20px;
-  border-radius: 20px;
+  padding: 20px 80px;
+  border-radius: 8px;
   text-align: center;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.card__price:hover {
+  color: var(--color-green);
 }
 
 /* === MODAL === */
 .modal-overlay {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--background-modal);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -244,4 +268,11 @@ iframe {
   top: 7%;
   bottom: 0;
   align-self: center;
+}
+
+/* === NOT-FOUND === */
+#notfound {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: 100px;
 }
