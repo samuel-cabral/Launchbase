@@ -6,9 +6,9 @@ for (let card of cards) {
   const cardId = card.getAttribute("id")
   card.addEventListener("click", function () {
     modalOverlay.classList.add("active");
-    
+
     if (modal.classList.contains("maximize")) {
-      modal.classList.remove("maximize")      
+      modal.classList.remove("maximize")
     }
 
     // selecionar o curso pelo id da DOM
