@@ -9,42 +9,21 @@
     <h1>Cursos</h1>
   </div>
 
+
   <section class="cards">
-    <div class="card" id="01">
-      <div class="card__image-container">
-        <img src="starter.svg" alt="Starter"/>
+    {% for item in items %}
+      <div class="card" id="{{item.id}}">
+        <div class="card__image-container">
+          <img src="{{item.image}}" alt="Imagem de {{item.title}}"/>
+        </div>
+        <div class="card__content">
+          <p>{{item.content}}</p>
+        </div>
+        <div class="card__info">
+          <p class="card__price">{{item.price}}</p>
+        </div>
       </div>
-      <div class="card__content">
-        <p>5 módulos</p>
-      </div>
-      <div class="card__info">
-        <p class="card__price">Gratuito</p>
-      </div>
-    </div>
-
-    <div class="card" id="02">
-      <div class="card__image-container">
-        <img src="launchbase.svg" alt="Launchbase"/>
-      </div>
-      <div class="card__content">
-        <p>16 módulos</p>
-      </div>
-      <div class="card__info">
-        <p class="card__price">Pago</p>
-      </div>
-    </div>
-
-    <div class="card" id="03">
-      <div class="card__image-container">
-        <img src="gostack.svg" alt="Gostack"/>
-      </div>
-      <div class="card__content">
-        <p>16 módulos</p>
-      </div>
-      <div class="card__info">
-        <p class="card__price">Pago</p>
-      </div>
-    </div>
+    {% endfor %}
   </section>
 
   <div class="modal-overlay">

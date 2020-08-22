@@ -4,58 +4,57 @@
   <title>Rocketseat | Sobre</title>
 {% endblock title %}
 
-
 {% block content %}
   <div id="wrapper">
-    <h1>Sobre</h1>  
-    <img
-      src="https://media-exp1.licdn.com/dms/image/C510BAQFHYedTI-oyWA/company-logo_200_200/0?e=2159024400&v=beta&t=yvPIbO_CuJzE-rPppYVY4VYuxkisOzn0d_Fwk1GpA7c"
-      alt="Rocketseat"
-    />
+    <h1>Sobre</h1>
+    <img src="https://pbs.twimg.com/profile_images/1291682473592659968/sEorc6oh_400x400.jpg" alt="Rocketseat"/>
 
     <h1>
       <a target="_blank" href="https://rocketseat.com.br">Rocketseat</a>
     </h1>
     <h2>
-      As melhores tecnologias em programação, direto ao ponto e do jeito
-      certo.
+      As melhores tecnologias em programação, direto ao ponto e do jeito certo.
     </h2>
     <p>
-      No meio de tanta informação e da quantidade de ferramentas que surgem
-      todos os dias, você precisa de alguém que te leve na direção certa.
+      No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.
     </p>
   </div>
 
-  <div class="tech">
-    <h1>Tecnologias Utilizadas</h1>
-    <div id="tech-images">
-      <img
-        src="https://icons-for-free.com/iconfiles/png/512/install+javascript+js+node+npm+tools+icon-1320165731324625592.png"
-        alt="Node JS"
-      />
+  <section class="technologies">
+    <h1>Nossa Stack</h1>
+    <ul class="technologies-list">
+      <li class="technologies-list-item">
+        <img 
+          src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" 
+          alt="Imagem de NodeJS"
+        >
+        <h1>NodeJS</h1>
+      </li>
 
-      <img
-        src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png"
-        alt="React JS"
-      />
-    </div>
+      <li class="technologies-list-item">
+        <img 
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" 
+          alt="Imagem de ReactJS"
+        >
+        <h1>ReactJS</h1>
+      </li>
 
-    <div id="tech-list">
-      <ul>
-        <li>NodeJS</li>
-        <li>ReactJS</li>
-        <li>React Native</li>
-      </ul>
-    </div>
-  </div>
+      <li class="technologies-list-item">
+        <img 
+          src="https://s3.amazonaws.com/media-p.slid.es/uploads/118447/images/2991881/reactpurple.png"
+          alt="Imagem de React Native"
+        >
+        <h1>React Native</h1>
+      </li>
+    </ul>
+  </section>
+
 {% endblock content %}
 
 {% block footer %}
   <div id="links-footer" class="links">
     <a href="https://github.com/Rocketseat" target="_blank">Github</a>
-    <a href="http://instagram.com/rocketseat_oficial" target="_blank"
-      >Instagram</a
-    >
+    <a href="http://instagram.com/rocketseat_oficial" target="_blank">Instagram</a >
     <a href="http://fb.com/rocketseat" target="_blank">Facebook</a>
   </div>
 {% endblock footer %}

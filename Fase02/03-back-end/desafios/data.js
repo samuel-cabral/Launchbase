@@ -1,20 +1,24 @@
 module.exports = [
+  // courses
   {
     id: '01',
+    image: 'starter.svg',
     title: 'Starter',
-    content: '8 módulos',
-    cost: 'Gratuito'
+    content: '5 módulos',
+    price: 'Gratuito'
   },
   {
     id: '02',
+    image: 'launchbase.svg',
     title: 'Launchbase',
-    content: '19 módulos',
-    cost: 'Pago'
+    content: '12 módulos',
+    price: 'Pago'
   },
   {
     id: '03',
     title: 'Gostack',
+    image: 'gostack.svg',
     content: '16 módulos',
-    cost: 'Pago'
-  }
+    price: 'Pago'
+  },
 ]
