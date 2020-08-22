@@ -4,9 +4,16 @@
   <title> 404 Not Found </title>
 {% endblock title %}
 
+{% block header %}
+{% endblock header %}
+
 
 {% block content %}
-  <header>
-    <h1>Ops! Essa página não foi encontrada. 😢</h1>
-  </header>
+  <div class="error">
+  <h1 id="not-found">
+    Ops! 
+    <br /> Essa página não foi encontrada. 
+    <br /> 😢
+  </h1>
+  </div>
 {% endblock content %}
