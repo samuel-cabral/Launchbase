@@ -1,51 +1,37 @@
 {% extends "layout.njk" %}
 
 {% block title %}
-  <title>Rocketseat | Sobre</title>
+  <title>{{ about.name }} | {{ about.title }}</title> 
 {% endblock title %}
 
 {% block content %}
   <div id="wrapper">
-    <h1>Sobre</h1>
-    <img src="https://pbs.twimg.com/profile_images/1291682473592659968/sEorc6oh_400x400.jpg" alt="Rocketseat"/>
+    <h1>{{ about.title }}</h1>
+    <img src="{{ about.logo_url }}" alt="Imagem de {{ about.name }}"/>
 
     <h1>
-      <a target="_blank" href="https://rocketseat.com.br">Rocketseat</a>
+      {{ about.avatar_url }}
     </h1>
     <h2>
-      As melhores tecnologias em programação, direto ao ponto e do jeito certo.
+      {{ about.presentation }}
     </h2>
     <p>
-      No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.
+      {{ about.description }}
     </p>
   </div>
 
   <section class="technologies">
     <h1>Nossa Stack</h1>
-    <ul class="technologies-list">
-      <li class="technologies-list-item">
-        <img 
-          src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" 
-          alt="Imagem de NodeJS"
-        >
-        <h1>NodeJS</h1>
-      </li>
-
-      <li class="technologies-list-item">
-        <img 
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" 
-          alt="Imagem de ReactJS"
-        >
-        <h1>ReactJS</h1>
-      </li>
-
-      <li class="technologies-list-item">
-        <img 
-          src="https://s3.amazonaws.com/media-p.slid.es/uploads/118447/images/2991881/reactpurple.png"
-          alt="Imagem de React Native"
-        >
-        <h1>React Native</h1>
-      </li>
+      <ul class="technologies-list">
+    {% for technology in about.technologies %}
+        <li class="technologies-list-item">
+          <img 
+            src="{{ technology.logo }}" 
+            alt="Imagem de {{ technology.title }}"
+          >
+          <h1>{{ technology.title }}</h1>
+        </li>
+    {% endfor %}
     </ul>
   </section>
 
@@ -53,8 +39,8 @@
 
 {% block footer %}
   <div id="links-footer" class="links">
-    <a href="https://github.com/Rocketseat" target="_blank">Github</a>
-    <a href="http://instagram.com/rocketseat_oficial" target="_blank">Instagram</a >
-    <a href="http://fb.com/rocketseat" target="_blank">Facebook</a>
+    {% for link in about.links %}
+      <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+    {% endfor %}
   </div>
 {% endblock footer %}
