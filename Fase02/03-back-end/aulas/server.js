@@ -13,7 +13,8 @@ server.set('view engine', 'njk');
 // SET NUNJUCKS TO CONFIGURE views FOLDER
 nunjucks.configure('views', {
   express:server,
-  autoescape: false
+  autoescape: false,
+  noCache: true
 });
 
 // ROUTES

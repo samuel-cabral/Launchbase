@@ -4,7 +4,8 @@ module.exports = [
     image: 'https://img.youtube.com/vi/GykTLqODQuU/maxresdefault.jpg',
     title: 'Formulário animado com JS puro e CSS Animation | Mayk Brito',
     duration: '57 min',
-    price: 'FREE'
+    price: 'FREE',
+    featured: true
   },
   {
     id: '2alg7MQ6_sI',
@@ -12,13 +13,15 @@ module.exports = [
     title: 'Git e GitHub na prática: um gua para iniciantes | Mayk Brito',
     duration: '33 min',
     price: 'FREE'
+    
   },
   {
     id: 'ghTrp1x_1As',
     image: 'https://img.youtube.com/vi/ghTrp1x_1As/maxresdefault.jpg',
     title: 'What is an API? REST and RESTful? | MaykBrito',
     duration: '33 min',
-    price: 'FREE'
+    price: 'FREE',
+    featured: true
   },
   {
     id: 'GSqR2i-Pq6o',
@@ -30,7 +33,7 @@ module.exports = [
   {
     id: 'HN1UjzRSdBk',
     image: 'https://img.youtube.com/vi/HN1UjzRSdBk/maxresdefault.jpg',
-    title: 'Desvendando o CSS Crid na prática | Mayk Brito',
+    title: 'Desvendando o CSS Grid na prática | Mayk Brito',
     duration: '36 min',
     price: 'FREE'
   },
@@ -39,6 +42,7 @@ module.exports = [
     image: 'https://img.youtube.com/vi/vqrjFnq3-uo/maxresdefault.jpg',
     title: 'Criando Player de Áudio com Javascript | Mayk Brito',
     duration: '105 min',
-    price: 'FREE'
+    price: 'FREE',
+    featured: true
   }
 ]
