@@ -197,3 +197,24 @@ iframe {
   top: -15px;
   border-radius: 16px;
 }
+
+/* === VIDEO PAGE */
+.video {
+  margin: 0 auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+.card__video-container {
+  position: relative;
+  padding-top: 62.5%;
+}
+
+.card__video-container iframe {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

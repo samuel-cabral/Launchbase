@@ -8,6 +8,8 @@ const videos = require('./data');
 // EXPRESS USE STATIC FILES OF THE public FOLDER
 server.use(express.static('public'));
 
+// if not found page
+
 server.set('view engine', 'njk');
 
 // SET NUNJUCKS TO CONFIGURE views FOLDER
@@ -30,13 +32,30 @@ server.get('/', function (req, res) {
       { name: 'LinkedIn', url: 'https://linkedin.com/in/maykbrito' }
     ]
   }
-
+  
   return res.render('about', { about });  
 });
 
 server.get('/portfolio', function (req, res) {
   return res.render('portfolio', { items: videos });
 });
+
+server.get('/video', function (req, res) {
+  const id = req.query.id;
+  
+  const video = videos.find(function (video) {
+    return (video.id == id);
+  });
+  
+  if (!video) {
+    return res.status(404).render('not-found');
+  }
+  
+  return res.render('video', { item: video });
+});
+
+
+server.use((req, res) => { res.status(404).render('not-found') });
 
 // START SERVER
 server.listen(5000, function () {
