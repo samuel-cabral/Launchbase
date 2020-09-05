@@ -6,12 +6,11 @@
 
 {% block content %}
   <div id="wrapper">
-    <h1>Cursos</h1>
+    <h1>{{course.title}}</h1>
   </div>
 
 
   <section class="cards">
-    {% for course in courses %}
       <div class="card" id="{{course.id}}">
         <div class="card__image-container">
           <img src="{{course.image}}" alt="Imagem de {{course.title}}"/>
@@ -23,7 +22,5 @@
           <p class="card__price">{{course.price}}</p>
         </div>
       </div>
-    {% endfor %}
   </section>
-  <script src="scripts.js"></script>
 {% endblock content %}
