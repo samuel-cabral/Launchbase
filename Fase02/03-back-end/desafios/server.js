@@ -48,22 +48,26 @@ server.get('/courses', function (req, res) {
   });
 });
 
-server.get("/courses/:id", function(req,res){           //passando o id do curso pela rota 
+server.get('/courses/:id', function(req,res){           //passando o id do curso pela rota 
   const id = req.params.id;                           //pegando o id da rota
 
+  const techs = technologiesData;
+  const links = linksData;
+  
   const course = coursesData.find(function(course){   //fazemos uma iteração com cada item do array dataCourse
       return course.id == id;                          //verificamos se o id da rota é igual ao id de algum item no array
-  })
-
+  });
   if(!course){
-      return res.render("not-found")
+      return res.render('not-found');
   }
 
   return res.render("course", { 
-    course: course, 
-  })
+    course: course,
+    techs: techs, 
+    links: links,
+  });
 
-})
+});
 
 
 // if not found

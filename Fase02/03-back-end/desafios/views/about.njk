@@ -23,15 +23,15 @@
   <section class="technologies">
     <h1>Nossa Stack</h1>
       <ul class="technologies-list">
-    {% for tech in techs %}
-        <li class="technologies-list-item">
-          <img 
-            src="{{ tech.logo }}" 
-            alt="Imagem de {{ tech.title }}"
-          >
-          <h1>{{ tech.title }}</h1>
-        </li>
-    {% endfor %}
+        {% for tech in techs %}
+            <li class="technologies-list-item">
+              <img 
+                src="{{ tech.logo }}" 
+                alt="Imagem de {{ tech.title }}"
+              >
+              <h1>{{ tech.title }}</h1>
+            </li>
+        {% endfor %}
     </ul>
   </section>
 

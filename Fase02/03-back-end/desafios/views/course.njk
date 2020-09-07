@@ -9,18 +9,31 @@
     <h1>{{course.title}}</h1>
   </div>
 
-
   <section class="cards">
-      <div class="card" id="{{course.id}}">
-        <div class="card__image-container">
-          <img src="{{course.image}}" alt="Imagem de {{course.title}}"/>
-        </div>
-        <div class="card__content">
-          <p>{{course.content}}</p>
-        </div>
-        <div class="card__info">
-          <p class="card__price">{{course.price}}</p>
-        </div>
+    <div class="card" id="{{course.id}}">
+      <div class="card__image-container">
+        <img src="{{course.image}}" alt="Imagem de {{course.title}}"/>
       </div>
+      <div class="card__content">
+        <p>{{course.content}}</p>
+      </div>
+      <div class="card__info">
+        <p class="card__price">{{course.price}}</p>
+      </div>
+    </div>
+
+    <div class="card" id="{{course.id}}">
+      <section class="technologies">
+        <h1>Nossa Stack</h1>
+        <ul class="technologies-list">
+          {% for tech in techs %}
+            <li class="technologies-list-item">
+              <img src="{{ tech.logo }}" alt="Imagem de {{ tech.title }}">
+              <h1>{{ tech.title }}</h1>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
   </section>
 {% endblock content %}
