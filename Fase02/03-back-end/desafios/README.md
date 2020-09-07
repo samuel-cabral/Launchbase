@@ -2,7 +2,7 @@
 
 # Rocketseat Website
 
-[README%2009ced827c212412d80ec94a203edec97/desafio3-3.mp4](README%2009ced827c212412d80ec94a203edec97/desafio3-3.mp4)
+[https://youtu.be/8Q5nGHsaGv8](https://youtu.be/8Q5nGHsaGv8)
 
 ## 🚀 Tecnologias
 
