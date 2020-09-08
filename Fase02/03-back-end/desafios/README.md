@@ -4,6 +4,11 @@
 
 [https://youtu.be/8Q5nGHsaGv8](https://youtu.be/8Q5nGHsaGv8)
 
+<a href="https://youtu.be/8Q5nGHsaGv8" target="_blank" align="center">
+  <img src="./assets/rocketseat.png">
+</a>
+
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
