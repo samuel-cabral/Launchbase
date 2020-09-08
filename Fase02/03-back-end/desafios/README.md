@@ -32,11 +32,6 @@ Este projeto é um site fictício para a empresa Rocketseat.
 - Faça push para a sua branch: `git push origin minha-feature`.
 
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
 ---
 
 Feito com ♥ by Samuel Cabral :wave: Meu Linkedin: [samuel-cabral](https://linkedin.com/in/samuel-cabral)
